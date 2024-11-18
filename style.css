@@ -93,6 +93,7 @@ body {
 #navbar li{
   list-style: none;
   padding: 0 20px;
+  position: relative;
 }
 
 #navbar li a{
@@ -107,9 +108,9 @@ body {
   color: var(--hoverColor);
 }
 
-#navbar li a.active{
+#navbar li a.active::after{
   content: "";
-  width: 50%;
+  width: 55%;
   height: 2px;
   background-color: var(--hoverColor);
   position: absolute;
